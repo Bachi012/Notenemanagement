@@ -33,6 +33,12 @@
                     <li class="nav-item ">
                         <a class="nav-link" href="hinzu.html">Test hinzufügen</a>
                     </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="tests.html">Test Übersicht</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="notenstaende.html">Schüler Notenstände</a>
+                    </li>
                     
                 </ul>
                 <!--<form class="form-inline my-2 my-lg-0">
@@ -45,7 +51,7 @@
 
     <!--Bootstrap-->
     <div class="jumbotron text-center">
-        <h1>(Provisorisch) Neueste Einträge:</h1>
+        <h1>Neueste Einträge:</h1>
     </div>
 
     <div class="container">
@@ -65,6 +71,18 @@
         </div>
     </div>
 
+    <form onsubmit="save(this); return false">
+
+            <input type="text" name="personname" placeholder="Name">
+    
+            <br>
+    
+            <input type="number" name="personage" placeholder="Alter">
+    
+            <input type="submit" value="Speichern">
+    
+    </form>
+    
     <!-- Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -72,6 +90,8 @@
             crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
                 crossorigin="anonymous"></script>
+    
+    <script src="index.js"></script>
 
    
 
@@ -120,4 +140,44 @@ js: $('.alert').alert()
   <hr>
   <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
 </div>
+-->
+
+
+
+
+<!---Dont mind
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+</head>
+
+
+
+<body>
+
+    <h1>Formular</h1>
+    <form onsubmit="save(this); return false">
+        <input type="text" name="personname" placeholder="Name">
+        <br>
+        <input type="number" name="personage" placeholder="Alter">
+        <input type="submit" value="Speichern">
+    </form>
+<div id="personTable"></div>
+ <script src="index.js"></script>
+</body>
+</html>
 -->
